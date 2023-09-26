@@ -1,0 +1,21 @@
+export OPENAI_API_KEY="your_OpenAI_API_key"
+
+usage: run.py [-h] [--config CONFIG] [--org ORG] [--task TASK] [--name NAME] [--model MODEL]
+
+argparse
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --config CONFIG  Name of config, which is used to load configuration under CompanyConfig/; Please see CompanyConfig Section below
+  --org ORG        Name of organization, your software will be generated in WareHouse/name_org_timestamp
+  --task TASK      Prompt of your idea
+  --name NAME      Name of software, your software will be generated in WareHouse/name_org_timestamp
+  --model MODEL    GPT Model, choose from {'GPT_3_5_TURBO','GPT_4','GPT_4_32K'}
+
+ ------------------------------------------------------------------------------------------------------------
+  The generated software is under WareHouse/NAME_ORG_timestamp, including:
+
+    all the files and manuals of this software
+    config files of company which made this software, including three config json files
+    full log of the software building process
+    prompt to make this software

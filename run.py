@@ -23,6 +23,10 @@ sys.path.append(root)
 
 from chatdev.chat_chain import ChatChain
 
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
+
 
 def get_config(company):
     """
